@@ -210,9 +210,7 @@ div.hero {
 }
 
 /* annie is bad at web design so here are fixes and IDs */
-.ignore {
-    opacity: 0%;
-}
+
 
 #social {
     margin-bottom: 20px;
@@ -306,4 +304,7 @@ html {
     margin-left: 5%;
     margin-right: 5%;
 }
+}
+.ignore {
+    display: none;
 }
