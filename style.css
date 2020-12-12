@@ -183,8 +183,13 @@ div.hero {
 }
 .illo {
     width: 418px;
-    height: auto;
+    height: 250px;
     margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+.socialwork {
+    width: 30%;
 }
 
 @media only screen and (min-width: 901px) and (max-width: 1200px) {
@@ -307,3 +312,15 @@ html {
 .ignore {
     display: none;
 }
+
+.parent {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: 1fr;
+grid-column-gap: 5px;
+grid-row-gap: 0px;
+}
+
+.div1 { grid-area: 1 / 1 / 2 / 2; }
+.div2 { grid-area: 1 / 2 / 2 / 3; }
+.div3 { grid-area: 1 / 3 / 2 / 4; }
