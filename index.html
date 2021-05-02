@@ -1,143 +1,72 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Annie Aguiar</title>
-    <meta name="description" content="Work by Annie Aguiar">
-    <meta name="author" content="Annie Aguiar">
-    <link href="style.css" media="all" rel="stylesheet">
-    <link rel="shortcut icon" href="a.ico">
+    <link rel="icon" type="image/jpg" href="images/icon.jpg"/>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-
 <body>
-<div class="hero">
-    <h1>I'm Annie Aguiar. <br>I'm a reporter,<br> designer and movie snob. </h1>
-    <h2>I currently live in Bloomington, Indiana, where I'm a senior at IU Bloomington <br>and Creative Director at the Indiana Daily Student. <a href="docs/resume.pdf" target="_blank">Here's my resumé</a>.</h2>
-    <br>
-    <h2><a href ="#first">↓↓↓</a></h2>
-</div>
-<br>
-<br>
-<br>
-<br>
-<div id="first">
-<br>
-<h3 class="label writing"><b>Featured Writing</b></h3>
-</div>
-<div class="grid-container">
-    <div class="grid-item">
-        <a href="https://www.seattletimes.com/life/food-drink/its-really-unbelievable-how-the-outpouring-of-support-for-black-owned-businesses-helped-a-grays-harbor-farmer/" target="_blank"><h4><span>‘It’s really unbelievable’: Outpouring of support for Black-owned businesses lifts up a Grays Harbor farmer | The Seattle Times</span></h4></a>
-        <p>Bil Thorn is a Black farmer in Washington state, running his small independent farm with his wife and children. After George Floyd's killing and a national reckoning with racial injustice, the farm received more than $45,000 in donations supporting a Black-owned business. It's changed their life. </p>
-        <br>
-    </div>
-
-    <div class="grid-item">
-        <a href="https://www.seattletimes.com/life/pets/one-positive-side-effect-of-the-coronavirus-pandemic-a-surge-and-now-a-shortage-of-adoptable-pets-in-greater-seattle/" target="_blank"><h4><span>One positive side effect of the coronavirus pandemic? A surge — and now a shortage — of adoptable pets | The Seattle Times</span></h4></a>
-        <p>An initial reported surge in pet adoption in the spring has somewhat continued into fall, as organizations and hopeful pet owners work under the conditions of the new supply and demand: a shortage in dogs, a kitten boom and the strain of financial worry dragging into the fall.</p>
-        <p></p>
+    <nav>
+        <ul>
+            <li><a href="index.html" id="logo">Annie Aguiar</a></li>
+            <li><a href="index.html#about">&#128075;About</a></li>
+            <li><a href="reporting.html">&#128240;Reporting</a></li>
+            <li><a href="design.html">&#128396;Design</a></li>
+            <li><a href="audio.html">&#127897;Audio</a></li>
+            <li><a href="research.html">&#128218;Research</a></li>
+        </ul>
+        <hr>
+    </nav>
+    <div class="container">
+        <div class="home pane">
+            <img src="images/home.png" alt="A picture of Annie Aguiar." class="home">
+            <div class="hometext">
+                <h2 class="hello"><label id="hello"></label></h2>
+                <!-- Note: I know this shows up in the validator as an error, but it's just because the H2 is applied to the Javascript-filled label.-->
+                <h3>I'm Annie Aguiar, a spring 2021 graduate of Indiana University Bloomington and an incoming Features reporting summer intern at the Washington Post.
+                    <span class="aboutlink"><a href="index.html#about">I'm a reporter, writer and designer originally from Tampa, Florida.</a></span></h3>
+                </div>
+            </div>
+            <div class="about pane" id="about">
+                <p>Annie's work has appeared in the Seattle Times, USAToday and the Indianapolis Star, as well as in her campus newspaper the Indiana Daily Student. At the IDS, she has worked in a number of positions including Editor-in-Chief, Creative Director, Managing Editor, Enterprise Editor, Arts Editor, Design Editor and features reporter. She worked through two elections, a tornado and a pandemic (not all at once, though). She's passionate about film, the arts, design, cooking and television.</p>
+                <p>Annie is a member of the National Association of Hispanic Journalists and the Society for News Design, and has won awards for both her design and reporting work while in college. She is also a former participant of the New York Times Student Journalism Institute. Here's her resum&eacute;:</p>
+                <p>&#128206;<a href="documents/resume.pdf" target="_blank"><em class="download"> Annie Aguiar Resum&eacute; (PDF, [68 KB])</em></a></p>
+                <img src="images/young.png" alt="A young Annie Aguiar sitting at a desk in her father's office." class="home">
+            </div>
         </div>
+        <footer>
+            <div class="container footer">
+                <hr>
+                <div class="update"><small><em>Last updated May 3, 2021</em></small></div>
+                <div class="social">
+                    <a href="mailto:annabel.aguiar@gmail.com" class="fa fa-envelope" target="_blank"></a>
+                    <a href="https://twitter.com/annabelaguiar" class="fa fa-twitter" target="_blank"></a>
+                    <a href="https://www.linkedin.com/in/annie-aguiar-42ab09156/" class="fa fa-linkedin-square" target="_blank"></a>
+                </div>
+            </div>
+        </footer>
 
-    <div class="grid-item">
-        <a href="https://www.idsnews.com/article/2019/06/it-was-ours-monroe-county-residents-struggle-with-loss-in-tornados-aftermath" target="_blank"><h4><span>‘It was ours’: Monroe County residents struggle with loss in tornado's aftermath | Indiana Daily Student</span></h4></a>
-        <p>The tornado hit a high of 130 miles per hour in its 3.7 mile path through Monroe County, through homes and lives near Ellettsville, Indiana. </p>
-        <p class="award"><b>Indiana Collegiate Press Association</b> 1st place Breaking News Reporting Online</p>
-        <p><em class="ignore">Here's how I designed the story for print.</em></p>
-    </div>
+        <script>
+        // Note: found this nice time-dependent JS snippet here: https://www.encodedna.com/javascript/say-good-morning-afternoon-evening-using-javascript.htm
+        var myDate = new Date();
+        var hrs = myDate.getHours();
 
+        var greet;
 
-    </div>
+        if (hrs < 12)
+        greet = 'Good morning! &#9728;&#65039;';
+        else if (hrs >= 12 && hrs <= 17)
+        greet = 'Good afternoon! &#128075;';
+        else if (hrs >= 17 && hrs <= 24)
+        greet = 'Good evening! &#127769;';
 
-<br>
-    <div class="more-writing">
-        <h6>Here are some other stories I'm proud of:</h6>
-
-        <a href="https://www.seattletimes.com/entertainment/visual-arts/seattle-cartoonists-document-their-lives-in-these-coronavirus-times-through-comics/" target="_blank"><h5><span>Through comics, Seattle cartoonists document their lives during the coronavirus pandemic | The Seattle Times</span></h5></a>
-
-        <a href="https://www.seattletimes.com/life/fitness/how-an-email-from-a-seattle-area-gym-ultimately-led-to-crossfit-ceo-greg-glassmans-resignation-for-racist-comments/" target="_blank"><h5><span>How an email from a Seattle-area gym led to CrossFit CEO Greg Glassman’s resignation for racist comments | The Seattle Times </span></h5></a>
-
-        <a href="https://www.seattletimes.com/life/seattle-area-high-schools-and-families-find-creative-ways-to-celebrate-their-2020-graduates-amid-coronavirus/"><h5><span>Greater Seattle-area high schools and families find creative ways to celebrate their 2020 graduates amid coronavirus | The Seattle Times </span></h5></a>
-
-        <a href="https://www.usatoday.com/in-depth/news/nation/2020/04/14/socion-a-socially-distant-easter-the-skies-part-justally-distant-easter-skies-part-just-long-enough/2981957001/"><h5><span>A ballet for Raffaella | Indiana Daily Student </span></h5></a>
-
-        <a href="https://www.usatoday.com/in-depth/news/nation/2020/04/14/socion-a-socially-distant-easter-the-skies-part-justally-distant-easter-skies-part-just-long-enough/2981957001/"><h5><span>On a socially distant Easter, the skies part just long enough | USA Today </span></h5></a>
-
-
-        <h2><a href ="#second">↓↓↓</a></h2>
-    </div>
-<br>
-<br>
-<br>
-<br>
-</div>
-<div class="design-section" id="second">
-<br>
-    <h3 class="label"><b>Print Design</b> <span class="link">Click any of the designs for a full-size PDF.</span></h3>
-        <!-- a concerning pattern -->
-        <!-- editorial p1 -->
-        <!-- ham -->
-        <!-- election -->
-        <a href="docs/murray.pdf" target="_blank"> <img border="0" alt="An investigation into sexual misconduct by professor Murray McGibbon." src="images/murray.jpg" class="page"></a>
-        <a href="docs/ham.pdf" target="_blank"> <img border="0" alt="Should you adopt a pet?" src="images/ham.jpg" class="page"></a>
-        <a href="docs/ham.pdf" target="_blank"> <img border="0" alt="How might election unrest play out in Bloomington?" src="images/unrest_Page_1.jpg" class="page"></a>
-        <a href="docs/kind.pdf" target="_blank"> <img border="0" alt="A little less than kind" src="images/kind.png" class="page"></a>
-        <a href="docs/shootingp1.pdf" target="_blank"> <img border="0" alt="This is why I didn't want to come here." src="images/shootingp1.png" class="page"></a>
-        <a href="docs/tom.pdf" target="_blank"> <img border="0" alt="How much is Tom Allen worth?" src="images/tom.png" class="page"></a>
-        <a href="docs/gpa.pdf" target="_blank"> <img border="0" alt="GPA calculator" src="images/gpap1.png" class="page"></a>
-        <a href="docs/indiana.pdf" target="_blank"> <img border="0" alt="Globetrotting through the Hoosier state" src="images/indiana.png" class="page"></a>
-        <a href="docs/hysteria.pdf" target="_blank"> <img border="0" alt="Hoosier Hysteria" src="images/hysteria.png" class="page"></a>
-        <a href="docs/big10.pdf" target="_blank"> <img border="0" alt="Big Ten Guide" src="images/big10.jpg" class="page"></a>
-</div>
-
-<div class="design-section">
-    <h3 class="label"><b>Infographics</h3></b>
-        <p>This semester, I am in an Infographics class taught by Steve Layton — you can check out my work for that class <a href="https://aguiara.pages.iu.edu/j464/index.html" target"_blank"> here.</p></a>
-        <img class="infograph" src="images/nytgraph1.png">
-        <img class="infograph" src="images/nytgraph2.png">
-        <img class="infograph" src="images/kemontiegif.gif">
-        <div id="tomsection">
-            <b id="tomhead">What's Tom Allen worth?</b>
-            <a href="http://specials.idsnews.com/whats-iu-football-coach-tom-allen-worth-contract/index.html" target="_blank"> <img border="0" alt="What's Tom Allen Worth?" src="images/allenbuck.png" id="tomleft" align="left"></a>
-            <a href="http://specials.idsnews.com/whats-iu-football-coach-tom-allen-worth-contract/index.html" target="_blank"> <img border="0" alt="What's Tom Allen Worth?" src="images/allenbuck.png" id="tomright" align="right"></a>
-            <div id="tomtext"<p>I came up with the idea of comparing IU Football Coach Tom Allen's salary with different price points for a better understanding of his new contract. I did the graphics for web <a href="docs/tom.pdf" target="_blank"> (and the print page)</a> — click an Allen buck to see the story designed for web by my best friend <a href="https://jacobdecastro.com/" target="_blank">Jacob deCastro</a>.<br>
-                <b>Indiana Collegiate Press Association</b> 1st place Best Informational Graphic, 1st place Best Animation/Interactive Graphic</p><p><b>SND 2020 College Design Contest</b> 3rd place Standalone Multimedia</p><p></p></div>
-            <br>
-        </div>
-        </div>
-<br>
-
-<div class="design-section"id="illodiv">
-    <h3 class="label" ><b>Editorial Illustrations</b></h3>
-    <img border="0" alt="For a story about political misinformation." src="images/misinfo.png" class="illo">
-    <img border="0" alt="For a story about white supremacy in Bloomington." src="images/nsfh.png" class="illo">
-    <img border="0" alt="For a story about contact tracing." src="images/tracing.png" class="illo">
-    <a href="https://www.idsnews.com/article/2020/02/iu-gpa-calculator-gave-students-access-to-other-students-gpas-grades" target="_blank"> <img border="0" alt="GPA calculator" src="images/gpa.png" class="illo"></a>
-    <a href="http://specials.idsnews.com/students-allege-misconduct-against-david-jang-iu-jacobs/index.html" target="_blank"> <img border="0" alt="Open secret" src="images/hands.png" class="illo"></a>
-    <a href="http://specials.idsnews.com/kemontie-johnson-murder-in-a-crowded-room-bloomington/" target="_blank"> <img border="0" alt="Murder in a crowded room" src="images/kemontie.png" class="illo"></a>
-</div>
-<div class="design-section" id="social">
-    <h3 class="label"><b>Social</b><span class="link"> Here are examples of my recent redesign of our <a href="https://www.instagram.com/idsnews/"> Instagram.</a> Click for full-size versions.</span></h3>
-        <a href="images/TBT1-1.png" target="_blank"> <img border="0" alt="Part of my Instagram redesign template." src="images/TBT1-1.png" class="social"></a>
-        <a href="images/TBT2.png" target="_blank"> <img border="0" alt="Part of my Instagram redesign template." src="images/TBT2.png" class="social"></a>
-        <a href="images/TBT4.png" target="_blank"> <img border="0" alt="Part of my Instagram redesign template." src="images/TBT4.png" class="social"></a>
-        <a href="images/TT1.png" target="_blank"> <img border="0" alt="Part of my Instagram redesign template." src="images/TT1.png" class="social"></a>
-        <a href="images/WP1.png" target="_blank"> <img border="0" alt="Part of my Instagram redesign template." src="images/WP1.png" class="social"></a>
-    <br>
-    <h3>Here's some work I've done for our Instagram since the redesign.</h3>
-    <div class="parent">
-        <div class="div1"><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/CGz7NZNpyON/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="13" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:35%;"><div style="padding:16px;"> <a href="https://www.instagram.com/p/CGz7NZNpyON/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;"> View this post on Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/CGz7NZNpyON/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by Indiana Daily Student (@idsnews)</a></p></div></blockquote> <script async src="https://www.instagram.com/embed.js"></script> </div>
-        <div class="div2"> <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/CHS-MkWJHoA/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="13" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:35%);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/CHS-MkWJHoA/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;"> View this post on Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/CHS-MkWJHoA/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by Indiana Daily Student (@idsnews)</a></p></div></blockquote> <script async src="https://www.instagram.com/embed.js"></script> </div>
-        <div class="div3"><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/CHTbB6DJNFJ/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="13" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:35%;"><div style="padding:16px;"> <a href="https://www.instagram.com/p/CHTbB6DJNFJ/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;"> View this post on Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/CHTbB6DJNFJ/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by Indiana Daily Student (@idsnews)</a></p></div></blockquote> <script async src="https://www.instagram.com/embed.js"></script> </div>
-    </div>
-</div>
-<br>
-<div id="contact">
-    <h3><b>Want to reach out to talk about opportunities?</b> <br>Or ask to see more clips? (Or just to say hi?) <span class="link"> <br>You can <a href="mailto:aguiara@iu.edu">email me</a> or DM me on <a href="https://www.twitter.com/annabelaguiar">Twitter</a>.</h3>
-    </div>
-</div>
-</body>
-<br>
-<footer>
-    <div id="footer"><small>Made by Annie Aguiar, last updated 12-12-2020.</small></div>
-</footer>
-<!-- im going to fucking scream!!! -->
-</html>
+        document.getElementById('hello').innerHTML =
+        '<b>' + greet + '</b>';
+        </script>
+    </body>
+    </html>
