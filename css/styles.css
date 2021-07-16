@@ -55,6 +55,9 @@ html {
     padding-bottom: 2.5vh;
 }
 
+#toplabel {
+    padding-top: 103px;
+}
 .pane {
     margin-top: 5vh;
     height: 95vh;
