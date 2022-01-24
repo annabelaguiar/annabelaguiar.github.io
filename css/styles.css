@@ -1,46 +1,31 @@
-
-/* general */
-
 html {
-    background-color: #fff9f4;
     scroll-behavior: smooth;
+    font-family: sans-serif;
+    font-size: 30px;
+    background-color: #DFECE6;
+    color: #215A6D;
 }
 
-/* structure */
+h4 {
+    color: #3B8C88;
+}
 
 .container {
     margin: 0 auto;
-    max-width: 60vw;
-    margin-top: 15vh;
-    margin-left: 20vh;
-    margin-right: 80vh;
+    width: 80vw;
 }
 
-.pane {
-    margin-bottom: 10vh;
-}
-/* typography */
-
-body {
-    font-family: 'Libre Baskerville', serif;
-    line-height: 120%;
-    margin-bottom: 2.5vh;
+.section {
+    margin-bottom:10vh;
+    padding-top:10vh;
 }
 
-/* section: home */
-
-/* section: about */
-
-/* section: writing */
-
-/* footer */
-
-footer {
-    color: #002287;
-    /* width: 60vw; */
-    opacity: 70%;
-    /* text-align: center; */
+/* links */
+a:link {
+    color: #3CA2A2;
+    text-decoration: underline;
 }
-
-
-
+a:visited {
+    color: #3CA2A2;
+    text-decoration: none;
+}
